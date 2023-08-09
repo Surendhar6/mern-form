@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bank Account Creation</title>
+    </head>
+    <body>
+        <h2>Create a Bank Account</h2>
+        <form id="bankAccountForm">
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required><br>
+            <br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email address" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
+            <br>
+            <label for="mobileNumber">Mobile Number:</label><br>
+            <input type="numberInput" id="mobileNumber" name="mobileNumber" placeholder="mobileNumber" pattern="[6-9]{1}[0-9]{9}" required><br>
+            <br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
+            <br>
+            <label for="initialDeposit">Initial Deposit:</label><br>
+            <input type="numberInput" id="initialDeposit" name="initialDeposit" placeholder="Initial Deposit (min: 500/-)" min="500" required><br>
+            <br>
+            <label for="User-Name">User-Name</label><br>
+            <input type="text" id="User-Name" name="User-Name" placeholder="User Name" required><br>
+            <br>
+            <label for="User-Password">Password</label><br>
+            <input type="password" id="password" name="password" Placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required><br>
+            <br>
+            <label for="accountType">Account Type:</label><br><br>
+            <select id="accountType" name="accountType" required>
+                <option value="savings">Savings</option>
+                <option value="checking">Checking</option>
+            </select><br>
+            <br>
+            <label for="termsAndConditions">
+                <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+                I agree to the Terms and Conditions
+            </label><br>
+            <br>
+            <button button type="submit">Create Account</button>
+        </form>
+        <p class="error" id="errorMessage"></p>
+    </body>
+</html>

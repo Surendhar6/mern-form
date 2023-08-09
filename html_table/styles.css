@@ -1,0 +1,23 @@
+
+table
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: grey;
+}
+tbody > tr,td,th
+{
+    border: 1.5px solid black;
+}
+th
+{
+    background-color: wheat;
+}
+tr,td,th
+{
+    padding: 8px;
+}
+td:hover 
+{
+    background-color: white;
+}
